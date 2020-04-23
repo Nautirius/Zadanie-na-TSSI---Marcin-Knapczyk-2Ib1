@@ -1,0 +1,105 @@
+:root {
+    background-color: white;
+    font-size: 62.5%;
+    font-family: 'arial', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* CONTAINERS */
+.container {
+    display: flexbox;
+    width: 100vw;
+    height: 202vh;
+}
+.container > * {
+    width: 100%;
+}
+.cover-container {
+    max-height: 60vh;
+    overflow: hidden;
+}
+.cover-container > img {
+    width: 100%;
+}
+.cover-container > h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 5vw;
+    position: absolute;
+    margin-top: 42vh;
+    margin-left: 2vw;
+}
+
+/* NAVIGATION */
+.navlist {
+    width: 100%;
+    margin: 4vh 0vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navlist > li {
+    float: left;
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+    font-size: 2vw;
+    text-align: center;
+    color: black;
+    display: block;
+}
+a:hover{
+    color: grey;
+    transition: 250ms;
+}
+
+/* GALLERY */
+.gallery-container {
+    display: flexbox;
+    justify-content: space-around;
+    width: 100vw;
+    height: 120vh;
+}
+.galleryrow {
+    display: flexbox;
+    max-width: 100%;
+}
+.galleryimg {
+    float: left;
+    width: 33vw;
+    height: 40vh;
+}
+.galleryimg:hover {
+    transform: scale(1.1, 1.1);
+    transition: 600ms;
+    animation: drop-shadow 300ms forwards;
+}
+.galleryrow > div {
+    float: left;
+    background-color:grey;
+    width: 33vw;
+    height: 40vh;
+    overflow: hidden;
+}
+@keyframes drop-shadow {
+    from{box-shadow: 0px;}
+    to {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)};
+}
+
+/* FOOTER */
+.footer-container {
+    width: 100%;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+}
+.footer > h1 {
+    text-align: center;
+    padding: 20vh, 5vw;
+    font-size: 5vh;
+}
